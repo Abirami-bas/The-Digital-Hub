@@ -4,6 +4,7 @@
   --card: #1e293b;
   --text: #e2e8f0;
   --accent: #38bdf8;
+  --button-text: #0b1120;
 }
 
 * {
@@ -36,7 +37,7 @@ body {
 button {
   background: var(--accent);
   border: none;
-  color: #0b1120;
+  color: var(--button-text);
   padding: 0.75rem 1.25rem;
   border-radius: 8px;
   font-weight: 700;
