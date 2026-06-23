@@ -4,8 +4,10 @@ if (year) {
 }
 
 const ctaButton = document.getElementById('ctaButton');
-if (ctaButton) {
+const statusMessage = document.getElementById('statusMessage');
+
+if (ctaButton && statusMessage) {
   ctaButton.addEventListener('click', () => {
-    alert('Welcome to The Digital Hub!');
+    statusMessage.textContent = 'Welcome to The Digital Hub!';
   });
 }
