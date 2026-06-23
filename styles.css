@@ -1,0 +1,87 @@
+:root {
+  color-scheme: dark;
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #e2e8f0;
+  --accent: #38bdf8;
+  --button-text: #0b1120;
+  --button-hover: #0ea5e9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.hero p {
+  max-width: 640px;
+  margin: 1rem auto 1.5rem;
+  line-height: 1.5;
+}
+
+button {
+  background: var(--accent);
+  border: none;
+  color: var(--button-text);
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background: var(--button-hover);
+}
+
+button[aria-disabled='true'] {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+button:focus-visible {
+  outline: 3px solid var(--text);
+  outline-offset: 2px;
+}
+
+.status-message {
+  margin-top: 1rem;
+  min-height: 1.5rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.features article {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  opacity: 0.9;
+}
