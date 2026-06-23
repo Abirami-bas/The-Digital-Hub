@@ -9,5 +9,7 @@ const statusMessage = document.getElementById('statusMessage');
 if (ctaButton && statusMessage) {
   ctaButton.addEventListener('click', () => {
     statusMessage.textContent = 'Welcome to The Digital Hub!';
+    ctaButton.disabled = true;
+    ctaButton.textContent = 'Joined';
   });
 }
