@@ -11,5 +11,6 @@ if (ctaButton && statusMessage) {
     statusMessage.textContent = 'Welcome to The Digital Hub!';
     ctaButton.disabled = true;
     ctaButton.textContent = 'Joined';
+    ctaButton.setAttribute('aria-label', 'Already joined The Digital Hub');
   });
 }
