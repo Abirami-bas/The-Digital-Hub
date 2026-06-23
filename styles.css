@@ -50,6 +50,11 @@ button:hover {
   background: var(--button-hover);
 }
 
+button[aria-disabled='true'] {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
 button:focus-visible {
   outline: 3px solid var(--text);
   outline-offset: 2px;
@@ -62,7 +67,7 @@ button:focus-visible {
 
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   max-width: 1000px;
   margin: 0 auto;

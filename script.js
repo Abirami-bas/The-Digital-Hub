@@ -8,8 +8,12 @@ const statusMessage = document.getElementById('statusMessage');
 
 if (ctaButton && statusMessage) {
   ctaButton.addEventListener('click', () => {
+    if (ctaButton.getAttribute('aria-disabled') === 'true') {
+      return;
+    }
+
     statusMessage.textContent = 'Welcome to The Digital Hub!';
-    ctaButton.disabled = true;
+    ctaButton.setAttribute('aria-disabled', 'true');
     ctaButton.textContent = 'Joined';
     ctaButton.setAttribute('aria-label', 'Already joined The Digital Hub');
   });
